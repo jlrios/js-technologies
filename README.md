@@ -1,2 +1,2 @@
 # js-technologies
-JavaScript, prácticas y proyectos
+JavaScript, prácticas y proyectos.
