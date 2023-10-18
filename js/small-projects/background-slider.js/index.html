@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Background Slider</title>
+</head>
+<body>
+    <h1>Simple Background Slider</h1>
+    <div id="prevButton" class="arrow l">
+        <img src="./images/left-arrow.png" alt="Left">
+    </div>
+    <div id="nextButton" class="arrow r">
+        <img src="./images/right-arrow.png" alt="Right">
+    </div>
+    <script>
+        // Background slider.
+        const covers = [
+            "url('./images/slider/cover-01.jpg') ",
+            "url('./images/slider/cover-02.jpg') ",
+            "url('./images/slider/cover-03.jpg') ",
+            "url('./images/slider/cover-04.jpg') "
+        ]
+
+        const backProperties = 'center/ cover no-repeat fixed'
+        const coverContainer = document.getElementById("header")
+        const prevSlide = document.getElementById("prevButton")
+        const nextSlide = document.getElementById("nextButton")
+
+        let currentSlide = 0
+        let maxSliders = covers.length
+
+        function displaySlide() {
+            coverContainer.style.background = covers[currentSlide] + backProperties
+        }
+
+        nextSlide.addEventListener('click', () => {
+            if (currentSlide === maxSliders) {
+                currentSlide = 0
+            } else {
+                currentSlide++
+            }
+
+            displaySlide()
+        })
+
+        prevSlide.addEventListener('click', () => {
+            if (currentSlide === 0) {
+                currentSlide = 4
+            } else {
+                currentSlide--
+            }
+
+            displaySlide()
+        })
+
+        displaySlide()
+    </script>
+</body>
+</html>
