@@ -1,6 +1,6 @@
 import 'colors'
 import showMenu, { checkTaskList, confirmOp, deleteTaskList, pause, readInput } from './menu/menu.js'
-import Tasks from './models/tasks.js'
+import Tasks from './controllers/tasks.js'
 import { readData, saveData } from './data/saveData.js'
 
 /**
