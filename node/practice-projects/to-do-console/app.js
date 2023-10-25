@@ -1,10 +1,10 @@
-import 'colors'
+import 'colors/index.js'
 import showMenu, { checkTaskList, confirmOp, deleteTaskList, pause, readInput } from './menu/menu.js'
 import Tasks from './controllers/tasks.js'
 import { readData, saveData } from './data/saveData.js'
 
 /**
- * 
+ * Entry point.
  */
 const main = async() => {
     let opt = ''
@@ -41,15 +41,16 @@ const main = async() => {
                 const id = await deleteTaskList(myTasks.listTasks)
                 console.log('Task Id: ', id)
                 if (id !== '0') {
-                    const ok = await confirmOp('Are you sure?')
+                    const ok = await confirmOp('¿Estás seguro?')
                     console.log('OK: ', ok)
                     if (ok) {
                         myTasks.deleteTask(id)
-                        console.log('Task deleted...')
+                        console.log('Tarea eliminada...')
                     }
                 }
-                
                 break
+            case '7':
+                console.log('End of line.')
         }
 
         saveData(myTasks.listTasks)
