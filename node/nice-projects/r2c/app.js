@@ -1,9 +1,9 @@
-import app from './server.js'
+import app from './server/server.js'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose'
 
 const r2cs = async function main() {
-    dotenv.config()
+    dotenv.config({ path: './config/.env' })
 
     const mongoDBURI = process.env.R2C_DB_URI
     const port = process.env.PORT || 8000

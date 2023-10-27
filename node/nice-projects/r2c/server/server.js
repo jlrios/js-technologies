@@ -1,15 +1,15 @@
 import express from 'express'
 import cors from 'cors'
-import r2c from './api/r2c.route.js'
-import batch from '../api/routes/batch.js'
+import dashboard from '../api/routes/dashboard.js'
+import device from '../api/routes/device.js'
 
 const app = express()
 
 app.use(cors())
 app.use(express.json())
 
-app.use('/api/v1/r2c', r2c)
-app.use('/api/v1/r2c', batch)
+app.use('/api/v1/r2c', dashboard)
+app.use('/api/v1/r2c', device)
 
 app.use('*', (req, res) => {
     res.status(404).json({
