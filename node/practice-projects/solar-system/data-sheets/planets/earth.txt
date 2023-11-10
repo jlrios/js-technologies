@@ -1,0 +1,19 @@
+
+  █░░ ▄▀█   ▀█▀ █ █▀▀ █▀█ █▀█ ▄▀█
+  █▄▄ █▀█   ░█░ █ ██▄ █▀▄ █▀▄ █▀█
+
+
+  Datos básicos
+  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  Distancia orbital: 149,598.262 km.
+  Luna(s): 1.
+  Diámetro:  12,742 km.
+  Masa: 5.97 × 10^24 kg.
+  Composición atmosférica: Nitrógeno (78%) y Oxígeno (21%)
+            Con otros gases como Argón, Dióxido de Carbono y
+            vapor de agua en cantidades menores.
+  Gravedad: 9.8m/s^2.                     
+  Duración del día: 23 horas y 56 minutos
+  Duración del año: 365.25 días.
+  Velocidad de escape: 11.2km/s.
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

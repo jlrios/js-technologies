@@ -1,5 +1,6 @@
 import 'colors'
 import showMenu, { pause } from './menu/menu.js'
+import { readDataSheet } from './data-sheets/read-ds.js'
 
 const main = async() => {
     let option = ''
@@ -7,11 +8,10 @@ const main = async() => {
     do {
         option = await showMenu()
         
-        console.log({ option })
-
         switch(option) {
             case '4':
-                console.log('Earth.') 
+                const infoPlanet = readDataSheet('./data-sheets/planets/earth.txt')
+                console.log(infoPlanet)
                 break
         }
 
